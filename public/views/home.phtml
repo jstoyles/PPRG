@@ -1,0 +1,11 @@
+<div>
+<?php foreach($repos as $r){ ?>
+	<section>
+		<a href="/repo-details/<?=$r->id?>/" class="repo-link"><?=$r->github_name?></a>
+		<details>
+			<summary>Description</summary>
+			<p><?=$r->github_description?></p>
+		</details>
+	</section>
+<?php } ?>
+</div>
