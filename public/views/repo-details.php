@@ -27,4 +27,8 @@
 		<b>Star Count:</b><br />
 		{{ echo number_format($repo->github_star_count); }}
 	</p>
+	<p>
+		<b>Github URL:</b><br />
+		<a href="{{ $repo->github_url }}" target="_blank">{{ $repo->github_url }}</a>
+	</p>
 </section>
